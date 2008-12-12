@@ -3,7 +3,8 @@ The purpose of gem parseline is to help the developers to load external CSV and 
 ===Installation 
  sudo gem sources --add http://gems.github.com
  sudo gem install shairontoledo-parseline
-
+or from rubyforge
+ sudo gem install parseline
 
 ===How to Use
 A single data mapper 
