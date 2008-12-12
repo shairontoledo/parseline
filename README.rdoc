@@ -11,7 +11,7 @@ A single data mapper
 ====Using CSV
 You can use the files delimited by a character or using regexp. To demonstrate its we'll use a migration/table
 
-class CreateProducts < ActiveRecord::Migration
+ class CreateProducts < ActiveRecord::Migration
   def self.up
     create_table :products do |t|
       t.integer :code
@@ -25,7 +25,7 @@ class CreateProducts < ActiveRecord::Migration
   def self.down
     drop_table :products
   end
-end
+ end
 
 and a given file called 'data.csv' with the content below.
 
