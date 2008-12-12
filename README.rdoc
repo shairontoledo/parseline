@@ -2,7 +2,7 @@ The purpose of gem parseline is to help the developers to load external CSV and 
 
 ===Installation 
  sudo gem sources --add http://gems.github.com
- sudo gem install parseline
+ sudo gem install shairontoledo-parseline
 
 
 ===How to Use
@@ -99,7 +99,7 @@ let's split those lines and define a model like
 
 After that 
 
-  @products=Product.load_lines "data.csv"
+  @products=Product.load_lines "data.txt"
 
 Remember to use the parse module
 It's easy to do, so enjoy and make money with it!
