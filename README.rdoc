@@ -9,7 +9,7 @@ or from rubyforge
 ===How to Use
 A single data mapper
 
-===With ActiveRecord
+===With ActiveRecord 
 
 ====Using CSV
 You can use the files delimited by a character or using regexp. To demonstrate its we'll use a migration/table
@@ -104,33 +104,33 @@ After that
 
   @products=Product.load_lines "data.txt"
 
-===With whatever class
+===With whatever class 
 
 ====Using Fixed Width
 
-require 'rubygems'
-require 'parseline'
+ require 'rubygems'
+ require 'parseline'
 
-class Person
+ class Person
 
-  attr_accessor :id
-  attr_accessor :age
+   attr_accessor :id
+   attr_accessor :age
 
-  extend ParseLine::FixedWidth
+   extend ParseLine::FixedWidth
 
-  fixed_width_layout do |parse|
-    parse.field :id, 0..4
-    parse.field :age, 5..6
-  end
-end
+   fixed_width_layout do |parse|
+     parse.field :id, 0..4
+     parse.field :age, 5..6
+   end
+ end
 
 After that 
 
-@people=Person.load_lines "data.txt"
+ @people=Person.load_lines "data.txt"
 
 and 
 
-@people.each{|person| p "id=#{person.id} and age=#{person.age}" }
+ @people.each{|person| p "id=#{person.id} and age=#{person.age}" }
 
 
 Remember to use the parse module
