@@ -7,6 +7,7 @@ or from rubyforge
  sudo gem install parseline
 
 ===How to Use
+
 A single data mapper
 
 ===With ActiveRecord 
@@ -104,7 +105,9 @@ After that
 
   @products=Product.load_lines "data.txt"
 
+
 ===With whatever class 
+
 
 ====Using Fixed Width
 
